@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace AirHug\Package;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 
@@ -20,7 +20,7 @@ class ServiceProvider extends LaravelServiceProvider
      */
     public function boot()
     {
-        $this->setupConfig();
+
     }
 
     /**
@@ -30,9 +30,7 @@ class ServiceProvider extends LaravelServiceProvider
      */
     protected function setupConfig()
     {
-        $source = realpath(__DIR__.'/config.php');
 
-        $this->mergeConfigFrom($source, 'wechat');
     }
 
     /**
@@ -52,6 +50,6 @@ class ServiceProvider extends LaravelServiceProvider
      */
     public function provides()
     {
-        return ['wechat', 'EasyWeChat\\Foundation\\Application'];
+        
     }
 }
