@@ -1,9 +1,10 @@
-<?php 
+<?php
 
-namespace AirHug\View;
+namespace AirHug\Package\View;
 
 class View
 {
+
 	public function info()
 	{
 		echo "this is a view!";

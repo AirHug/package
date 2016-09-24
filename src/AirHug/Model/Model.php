@@ -1,16 +1,11 @@
 <?php 
-namespace AirHug\Model
+namespace AirHug\Package\Model;
 
 /**
 * 
 */
 class Model
 {
-	
-	function __construct(argument)
-	{
-		# code...
-	}
 
 	public function info()
 	{

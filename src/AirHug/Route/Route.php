@@ -1,5 +1,5 @@
-<?php 
-namespace AirHug\Route;
+<?php
+namespace AirHug\Package\Route;
 
 class Route
 {
