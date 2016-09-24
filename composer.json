@@ -15,9 +15,7 @@
         },
     "autoload": {
         "psr-4": {
-            "AirHug\\View\\": "src/AirHug/View",
-            "AirHug\\Route\\": "src/AirHug/Route",
-            "AirHug\\Model\\": "src/AirHug/Model"
+            "AirHug\\Package\\": "src"
         }
     }
 }
