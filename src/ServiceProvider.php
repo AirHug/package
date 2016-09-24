@@ -20,7 +20,15 @@ class ServiceProvider extends LaravelServiceProvider
      */
     public function boot()
     {
-
+//        echo __DIR__.'\stubs\routes\routes.php';
+//        $this->publishes([
+//            __DIR__ . '/config.php' => config_path('airhug.php'),
+//        ]);
+        file_put_contents(
+            app_path('Http/routes.php'),
+            file_get_contents(__DIR__ . '/stubs/routes/routes.stub'),
+            FILE_APPEND
+        );
     }
 
     /**
